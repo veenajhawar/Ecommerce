@@ -1,0 +1,16 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "cucmber",
+			"problemMatcher": [],
+			"label": "npm: cucmber",
+			"detail": "npx cucmber-js && ts-node .src.index.ts",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}
