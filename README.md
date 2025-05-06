@@ -1,80 +1,78 @@
-🌐 Website:
+# Ecommerce Automation Project
 
-https://urldefense.com/v3/__https://www.saucedemo.com/__;!!GfteaDio!bJbR0opX9qdDsnIYX46zmvnz0CZqLAqwUPETJeip65oPqwq1Z3BlphoWbuZsBvh8YyHYcdfp0rnhVf_SKaEF$
+This project automates the testing of an ecommerce website using Playwright and Cucumber with TypeScript.
 
-🔐 Credentials:
+---
 
-Username: standard_user
+## Table of Contents
 
-Password: secret_sauce
+- [Setup Instructions](#setup-instructions)
+- [Required Extensions](#required-extensions)
+- [Running Tests](#running-tests)
+- [Generating Reports](#generating-reports)
+- [Contributors](#contributors)
 
-🎯 Task Overview:
+---
 
-Log in with the provided credentials.
+## Setup Instructions
 
-Add two specific items to the cart:
+1. **Clone the Repository**  
+   Clone the repository using one of the following methods:
 
-Sauce Labs Backpack
-
-Sauce Labs Bike Light
-
-Navigate to the cart and verify that both items are present.
-
-Remove one item (e.g., the Bike Light), and confirm the correct item remains.
-
-Proceed to checkout.
-
-Fill in the required checkout details:
-
-First Name
-
-Last Name
-
-Zip/Postal Code
-
-Complete the checkout process.
-
-Verify the confirmation message: “THANK YOU FOR YOUR ORDER”
-
-Setting up the project
-Pre-requisites
-
-    Clone repo: https://github.com/veenajhawar/Parexel.git
+   git clone https://github.com/veenajhawar/Ecommerce.git
 
 OR
-gh repo clone veenajhawar/Parexel
 
-Once cloned, checkout a branch and install from package.lock in working dir
+gh repo clone veenajhawar/Ecommerce
 
-    npm install
+2. **Install Dependencies**  
+   Navigate to the working directory and install dependencies from `package-lock.json`:
 
-    Install playwright :
+   npm install
 
-npm install -D @playwright/test@latest
+3. **Install Playwright**  
+   Install Playwright for testing:
 
-I have installed quite a few extensions
+   npm install -D @playwright/test@latest
 
-1.  prettier
-2.  cucumber
-3.  playwright with typescript
-4.  Git Hub copilet
-    **Make sure to update all packages before running tests**
+---
 
-        npm -i
+## Required Extensions
 
-**Running tests**
+The following extensions are recommended for this project:
 
-Tests will run tag names (smoke and regression) We can add more tags as we need in index.html
+1. Prettier
+2. Cucumber
+3. Playwright with TypeScript
+4. GitHub Copilot
 
-example - run tests with smoke tag
+**Note:** Make sure to update all packages before running tests:
 
-    npm run cucumber smoke
+``
+npm update
 
-cucumber is a script in package.json which calls index.ts for full script
+---
 
-Reports can be generated with
+## Running Tests
 
-    npm run cucmber --reporter=html
+Tests are organized by tag names (e.g., `smoke` and `regression`). You can add more tags as needed in `index.html`.
 
-Contributors
-veena Jhawar
+To run tests with the `smoke` tag:
+
+npm run cucumber smoke
+
+The `cucumber` script in `package.json` calls `index.ts` for the full script.
+
+---
+
+## Generating Reports
+
+Reports can be generated using the following command:
+
+npm run cucumber --reporter=html
+
+---
+
+## Contributors
+
+Veena Jhawar
